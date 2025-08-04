@@ -52,6 +52,9 @@ boxes.forEach((box) => {
 });
 //Reset logic
 const reset = () => {
+  boxes.forEach((box) => {
+  box.removeAttribute("played");
+ })
   countPos = 0;
   count = 0;
   playerO = true;
